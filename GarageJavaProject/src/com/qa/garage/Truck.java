@@ -1,5 +1,5 @@
 package com.qa.garage;
 
-public class Garage {
+public class Truck {
 
 }

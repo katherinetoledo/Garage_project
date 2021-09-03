@@ -1,0 +1,51 @@
+Garage Exercise
+
+Pre Project - Set up a new repo AND a new Eclipse project 
+
+1) Create a base class called vehicle with the following criteria:
+- Atleast 3 variables (with differing data types) String, int, boolean
+- + 1 ID variable
+- Constructor
+- Getters and setters
+- Calculate Bill method(but this will be replaced by the sub vehicle classes)
+
+2) Create three different vehicle classes that extend off of vehicles (Car, Truck etc.)
+Each derived class should have the following:
+- Atleast 2 more variables specific to the vehicle
+- Getters and setters
+- Constructor
+- Overridden Calculate Bill method, each vehicle type should have a specific way of calculating a bill (£50 + for each wheel, times 2 for bad condition etc)
+and should return a float for the cost of the repair
+
+3) Using an Arraylist implementation store all of the vehicles in a garage class
+
+4) Garage class should have the following methods:
+- Adding a vehicle to the garage
+- Removing a vehicle from the garage (By ID, type etc)
+- Fixing a vehicle (Running calculate bill and printing the cost)
+- Listing all vehicles in the garage
+- Clearing all vehicles in the garage
+
+5) With your runner create vehicles of a specific type (car, truck etc) and use these objects to add to the garage
+The other garage methods will likely take in an ID or a vehicle type etc
+
+
+Calculate Bill Example: 
+
+	public float calcBill() {
+		
+		int totalBill = 0;
+		String condition = C;
+		
+		// For every wheel on the vehicle multiply by 5 and add to the bill
+		totalBill += (noOfWheels*5);
+		
+		if (condition == C) {
+			totalBill * 3;
+		}
+
+        return totalBill;
+	}
+
+    Make as simple or as complex as you like MUST include atleast 1 variable from Vehicle class and atleast 2 from sub vehicle
+
