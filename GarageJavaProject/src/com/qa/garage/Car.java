@@ -38,8 +38,7 @@ public class Car extends Vehicle {
 	
 	//Calculate Bill Method
 	public float calcBill() {
-			
-		return (100*getSize()) + (200*getPrice());
+		return 0;
 	}
 	
 }

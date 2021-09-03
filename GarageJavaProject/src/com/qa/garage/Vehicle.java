@@ -61,7 +61,15 @@ public class Vehicle {
 	
 	//Calculate Bill Method
 	public float calcBill() {
-		return 0;
+
+		int totalBill = 0;
+		totalBill += (numberOfPassagers*5);
+		
+		if (model == "truck") {
+			totalBill += 7500;
+		}
+		
+		return totalBill;
 	}
 	
 	

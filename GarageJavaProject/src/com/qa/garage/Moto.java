@@ -35,18 +35,15 @@ public class Moto extends Vehicle{
 	//Calculate Bill Method
 		public float calcBill() {
 			
-			int totalBill = 0;
-			boolean aerodynamicEfficiency = true;
-				
-				totalBill += (horsePower*10);
+			int totalBill = 0;		
+			totalBill += (horsePower*10);
 					
-				if (aerodynamicEfficiency == true) {
-					int newTotalBill = totalBill * 2;
-				}
+			if (aerodynamicEfficiency == true) {
+				totalBill += 20;
+			}
 		
 				
-		return newTotalBill;
+		return totalBill;
 		}
-	
 	
 }

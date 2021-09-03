@@ -34,17 +34,15 @@ public class Truck extends Vehicle {
 	//Calculate Bill Method
 	public float calcBill() {
 		
-		int totalBill = 10;
-		String fuel = "Diesel";
-			
-			totalBill += (length*5);
+		int totalBill = 10;		
+		totalBill += (length*5);
 				
-			if (fuel == "Diesel") {
-				int newTotalBill = totalBill * 10;
-			}
+		if (fuel == "Diesel") {
+			totalBill += 1000;
+		}
 	
 			
-	return newTotalBill;
+	return totalBill;
 	}
 }
 
